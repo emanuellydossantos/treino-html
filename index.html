@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste html</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: large;
+            margin: 10px;
+        }
+
+        #texto{
+            background-color: antiquewhite;
+        }
+
+        #floquinha{
+            margin-left: 35%;
+        }
+
+        #escolher{
+            background-color: bisque;
+            margin-top: 40px;
+        }
+
+        #frases{
+            background-color: antiquewhite;
+        }
+
+        #Lua{
+            background-color: lightgoldenrodyellow;
+            font-style: italic;
+        }
+
+        #baixarvideo{
+            text-align: center;
+            font-style: italic;
+        }
+
+        #final{
+            text-align: center;
+            background-color: brown;
+            color: lightgoldenrodyellow;
+            font-size: larger;
+        }
+    </style>
+</head>
+<body>
+    <!--br é um quebra de linha-->
+    <div id="escolher">
+        <br>
+        <form action="form_img.asp">
+            <!--Somente imagem-->
+            <input type="file" name="imagem" accept="image/*">
+            <input type="submit">
+        </form>
+        <br>
+    </div>
+    <!--hr é uma quebra temática-->
+    <hr>
+
+    <div id="texto">
+        <br>
+        <!-- spellcheck = ortografia -->
+        <input type="text" size="35" spellcheck="true">
+        <br>
+        <br>
+    </div>
+
+    <hr>
+
+    <div id="frases">
+        <br>
+        <!--Não pode traduzir-->
+        <p translate="no">This cannot be translated!</p>
+        <!--Pode traduzir-->
+        <p>This can be translated!</p>
+        <!--p representa um parágrafo-->
+        <br>
+    </div>
+
+    <hr>
+
+    <div id="Lua">
+        <br>
+        <!--a é o elemento âncora, atributo href = hiperligação-->
+        <a href="./Image/Imagem Lua e das estrelas.png" download="Lua e Estrelas">Baixar imagem com frase</a>
+        <br>
+        <br>
+    </div>
+
+    <hr>
+
+
+    <br>
+    <br>
+    <!--poster definiu uma tumbnail para o vídeo-->
+    <!--muted inicia mudo-->
+    <!--AUOPLAY = o vídeo roda sem precisar realizar alguma ação-->
+    <div id="floquinha">
+        <video controls muted autoplay poster="./Image/thumb.jpg" width="600">
+            <source src="./Image/Short - coelhinho fofo.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <br>
+    
+    <br>
+    <div id="baixarvideo">
+        <a href="./Image/Short - coelhinho fofo.mp4" download="coelhinho albino"> Baixar Vídeo</a>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div id="final">
+        <b>
+            <p>
+                " Se você gasta muito tempo pensando em algo, nunca conseguirá fazer isso. "<br>
+                Adriano Menezes
+            </p>
+        </b>
+
+    </div>
+    <br>
+
+</body>
+</html>
